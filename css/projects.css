@@ -78,7 +78,29 @@ body{
     position: absolute;
     top:200px;
  
-    
+    @keyframes logoAnimation {
+        0% {
+          transform: translateY(-50px);
+          opacity: 0;
+          color: rgb(255, 255, 255);
+        }
+        50% {
+          transform: translateY(0);
+          opacity: 1;
+          color: rgb(255, 255, 255);
+        }
+        100% {
+          transform: translateY(50px);
+          opacity: 0;
+          color: rgb(255, 255, 255);
+        }
+      }
+     
+      .trans {
+  
+        animation: logoAnimation 5s infinite;
+      }
+
 
 }
 .table a{
@@ -92,6 +114,7 @@ body{
     border-radius: 10px;
     
 }
+
 
 
     
